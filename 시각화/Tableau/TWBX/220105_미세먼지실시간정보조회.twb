@@ -1,0 +1,1671 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1217.2252                               -->
+<workbook original-version='18.1' source-build='2021.4.2 (20214.21.1217.2252)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='2022-01-052100' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Naver+(주식 데이터 수집)' inline='true' name='federated.0g13wbt14um7rg1d9ht2m0ygf9yk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='주식 데이터 수집' name='google-sheets.1uytu100nranjm13o6dq31l4jiff'>
+            <connection class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='주식 데이터 수집' googleSheetId='1mby0FGBhRem87UaNo-CvC66ByMPig4UrAK1oM3U33Fs' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='dkgusthdus@gmail.com' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Naver+' type='union'>
+          <columns header='yes'>
+            <column datatype='date' name='Date' />
+            <column datatype='integer' name='Close' />
+            <column datatype='datetime' name='Date 1' />
+            <column datatype='integer' name='Open' />
+            <column datatype='datetime' name='Date 2' />
+            <column datatype='integer' name='Low' />
+            <column datatype='datetime' name='Date 3' />
+            <column datatype='integer' name='High' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='google-sheets.1uytu100nranjm13o6dq31l4jiff' name='Naver' table='[Naver$]' type='table'>
+            <columns gridOrigin='A1:H1963:no:A1:H1963:0' header='yes' outcome='6'>
+              <column datatype='datetime' name='Date' ordinal='0' />
+              <column datatype='integer' name='Close' ordinal='1' />
+              <column datatype='datetime' name='Date 1' ordinal='2' />
+              <column datatype='integer' name='Open' ordinal='3' />
+              <column datatype='datetime' name='Date 2' ordinal='4' />
+              <column datatype='integer' name='Low' ordinal='5' />
+              <column datatype='datetime' name='Date 3' ordinal='6' />
+              <column datatype='integer' name='High' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='google-sheets.1uytu100nranjm13o6dq31l4jiff' name='Kakao' table='[Kakao$]' type='table'>
+            <columns gridOrigin='A1:H1961:no:A1:H1961:0' header='yes' outcome='6'>
+              <column datatype='datetime' name='Date' ordinal='0' />
+              <column datatype='integer' name='Close' ordinal='1' />
+              <column datatype='datetime' name='Date 1' ordinal='2' />
+              <column datatype='integer' name='Open' ordinal='3' />
+              <column datatype='datetime' name='Date 2' ordinal='4' />
+              <column datatype='integer' name='Low' ordinal='5' />
+              <column datatype='datetime' name='Date 3' ordinal='6' />
+              <column datatype='integer' name='High' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='Naver+' type='union'>
+          <columns header='yes'>
+            <column datatype='date' name='Date' />
+            <column datatype='integer' name='Close' />
+            <column datatype='datetime' name='Date 1' />
+            <column datatype='integer' name='Open' />
+            <column datatype='datetime' name='Date 2' />
+            <column datatype='integer' name='Low' />
+            <column datatype='datetime' name='Date 3' />
+            <column datatype='integer' name='High' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='google-sheets.1uytu100nranjm13o6dq31l4jiff' name='Naver' table='[Naver$]' type='table'>
+            <columns gridOrigin='A1:H1963:no:A1:H1963:0' header='yes' outcome='6'>
+              <column datatype='datetime' name='Date' ordinal='0' />
+              <column datatype='integer' name='Close' ordinal='1' />
+              <column datatype='datetime' name='Date 1' ordinal='2' />
+              <column datatype='integer' name='Open' ordinal='3' />
+              <column datatype='datetime' name='Date 2' ordinal='4' />
+              <column datatype='integer' name='Low' ordinal='5' />
+              <column datatype='datetime' name='Date 3' ordinal='6' />
+              <column datatype='integer' name='High' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='google-sheets.1uytu100nranjm13o6dq31l4jiff' name='Kakao' table='[Kakao$]' type='table'>
+            <columns gridOrigin='A1:H1961:no:A1:H1961:0' header='yes' outcome='6'>
+              <column datatype='datetime' name='Date' ordinal='0' />
+              <column datatype='integer' name='Close' ordinal='1' />
+              <column datatype='datetime' name='Date 1' ordinal='2' />
+              <column datatype='integer' name='Open' ordinal='3' />
+              <column datatype='datetime' name='Date 2' ordinal='4' />
+              <column datatype='integer' name='Low' ordinal='5' />
+              <column datatype='datetime' name='Date 3' ordinal='6' />
+              <column datatype='integer' name='High' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date 1</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date 1]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Date 1</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date 2</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date 2]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Date 2</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date 3</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date 3]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Date 3</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Naver+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Kakao Close' datatype='real' name='[Calculation_1154891886796890113 1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(IIF([Sheet]=&apos;Kakao&apos;, [Close], NULL))' />
+      </column>
+      <column caption='Naver Close' datatype='real' name='[Calculation_1154891886796890113]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(IIF([Sheet]=&apos;Naver&apos;, [Close], NULL))' />
+      </column>
+      <column datatype='datetime' hidden='true' name='[Date 1]' role='dimension' type='ordinal' />
+      <column datatype='datetime' hidden='true' name='[Date 2]' role='dimension' type='ordinal' />
+      <column datatype='datetime' hidden='true' name='[Date 3]' role='dimension' type='ordinal' />
+      <column caption='Company' datatype='string' name='[Sheet]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Naver' datatype='table' name='[__tableau_internal_object_id__].[Naver_C02004932C7C48C2B8E7AB7CD45901B2]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1154891886796890113 1]' derivation='User' name='[usr:Calculation_1154891886796890113 1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1154891886796890113]' derivation='User' name='[usr:Calculation_1154891886796890113:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='C:/Users/ahyeon/Desktop/휴학/twbx/Naver+(주식 데이터 수집).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/05/2022 02:21:41 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Naver+(주식 데이터 수집)' increment-value='%null%' refresh-type='create' rows-inserted='3922' timestamp-start='2022-01-05 14:21:39.568' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Naver+</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1658</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Close</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Close</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Naver+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1158</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Open</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Open]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Open</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Naver+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1149</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Low</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Low</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Naver+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[High]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>High</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Naver+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1165</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sheet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sheet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sheet</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Naver+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Naver_C02004932C7C48C2B8E7AB7CD45901B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0g13wbt14um7rg1d9ht2m0ygf9yk].[usr:Calculation_1154891886796890113 1:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0g13wbt14um7rg1d9ht2m0ygf9yk].[usr:Calculation_1154891886796890113:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0g13wbt14um7rg1d9ht2m0ygf9yk].[usr:Calculation_1154891886796890113:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Naver' id='Naver_C02004932C7C48C2B8E7AB7CD45901B2'>
+            <properties context=''>
+              <relation all='true' name='Naver+' type='union'>
+                <columns header='yes'>
+                  <column datatype='date' name='Date' />
+                  <column datatype='integer' name='Close' />
+                  <column datatype='datetime' name='Date 1' />
+                  <column datatype='integer' name='Open' />
+                  <column datatype='datetime' name='Date 2' />
+                  <column datatype='integer' name='Low' />
+                  <column datatype='datetime' name='Date 3' />
+                  <column datatype='integer' name='High' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='google-sheets.1uytu100nranjm13o6dq31l4jiff' name='Naver' table='[Naver$]' type='table'>
+                  <columns gridOrigin='A1:H1963:no:A1:H1963:0' header='yes' outcome='6'>
+                    <column datatype='datetime' name='Date' ordinal='0' />
+                    <column datatype='integer' name='Close' ordinal='1' />
+                    <column datatype='datetime' name='Date 1' ordinal='2' />
+                    <column datatype='integer' name='Open' ordinal='3' />
+                    <column datatype='datetime' name='Date 2' ordinal='4' />
+                    <column datatype='integer' name='Low' ordinal='5' />
+                    <column datatype='datetime' name='Date 3' ordinal='6' />
+                    <column datatype='integer' name='High' ordinal='7' />
+                  </columns>
+                </relation>
+                <relation connection='google-sheets.1uytu100nranjm13o6dq31l4jiff' name='Kakao' table='[Kakao$]' type='table'>
+                  <columns gridOrigin='A1:H1961:no:A1:H1961:0' header='yes' outcome='6'>
+                    <column datatype='datetime' name='Date' ordinal='0' />
+                    <column datatype='integer' name='Close' ordinal='1' />
+                    <column datatype='datetime' name='Date 1' ordinal='2' />
+                    <column datatype='integer' name='Open' ordinal='3' />
+                    <column datatype='datetime' name='Date 2' ordinal='4' />
+                    <column datatype='integer' name='Low' ordinal='5' />
+                    <column datatype='datetime' name='Date 3' ordinal='6' />
+                    <column datatype='integer' name='High' ordinal='7' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='getCtprvnRltmMesureDnsty' inline='true' name='federated.1b3lg7z14hi84r13v5t4i108dt5w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='getCtprvnRltmMesureDnsty' name='semistructpassivestore-direct.0a54jch1cmc8xp142vcag1fl0ozw'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/ahyeon/Desktop/휴학/twbx' filename='getCtprvnRltmMesureDnsty.json' password='' server='' workgroup-auth-mode='as-is'>
+              <semistruct-schemas>
+                <semistruct-schema table='[getCtprvnRltmMesureDnsty.json]'>
+                  <map key='response' value='true' />
+                  <map key='response.body' value='true' />
+                  <map key='response.body.items' value='true' />
+                  <map key='response.body.items.Value' value='true' />
+                  <map key='response.header' value='false' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.0a54jch1cmc8xp142vcag1fl0ozw' name='getCtprvnRltmMesureDnsty.json' table='[getCtprvnRltmMesureDnsty.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.0a54jch1cmc8xp142vcag1fl0ozw' name='getCtprvnRltmMesureDnsty.json' table='[getCtprvnRltmMesureDnsty.json]' type='table' />
+        <cols>
+          <map key='[Document Index (generated)]' value='[getCtprvnRltmMesureDnsty.json].[Document Index (generated)]' />
+          <map key='[coGrade]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.coGrade]' />
+          <map key='[coValue]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.coValue]' />
+          <map key='[dataTime]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.dataTime]' />
+          <map key='[items 인덱스(생성됨)]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Index (generated)]' />
+          <map key='[khaiGrade]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.khaiGrade]' />
+          <map key='[khaiValue]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.khaiValue]' />
+          <map key='[no2Grade]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.no2Grade]' />
+          <map key='[no2Value]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.no2Value]' />
+          <map key='[numOfRows]' value='[getCtprvnRltmMesureDnsty.json].[response.body.numOfRows]' />
+          <map key='[o3Grade]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.o3Grade]' />
+          <map key='[o3Value]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.o3Value]' />
+          <map key='[pageNo]' value='[getCtprvnRltmMesureDnsty.json].[response.body.pageNo]' />
+          <map key='[pm10Grade]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.pm10Grade]' />
+          <map key='[pm10Value]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.pm10Value]' />
+          <map key='[pm25Grade]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.pm25Grade]' />
+          <map key='[pm25Value]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.pm25Value]' />
+          <map key='[sidoName]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.sidoName]' />
+          <map key='[so2Grade]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.so2Grade]' />
+          <map key='[so2Value]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.so2Value]' />
+          <map key='[stationName]' value='[getCtprvnRltmMesureDnsty.json].[response.body.items.Value.stationName]' />
+          <map key='[totalCount]' value='[getCtprvnRltmMesureDnsty.json].[response.body.totalCount]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[items 인덱스(생성됨)]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.coGrade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[coGrade]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.coGrade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.coValue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[coValue]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.coValue</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.dataTime</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dataTime]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.dataTime</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.khaiGrade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[khaiGrade]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.khaiGrade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.khaiValue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[khaiValue]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.khaiValue</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.no2Grade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[no2Grade]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.no2Grade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.no2Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[no2Value]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.no2Value</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.o3Grade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[o3Grade]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.o3Grade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.o3Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[o3Value]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.o3Value</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.pm10Grade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pm10Grade]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.pm10Grade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.pm10Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pm10Value]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.pm10Value</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.pm25Grade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pm25Grade]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.pm25Grade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.pm25Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pm25Value]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.pm25Value</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.sidoName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sidoName]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.sidoName</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.so2Grade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[so2Grade]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.so2Grade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.so2Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[so2Value]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.so2Value</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.items.Value.stationName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stationName]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.items.Value.stationName</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.numOfRows</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[numOfRows]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.numOfRows</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.pageNo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pageNo]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.pageNo</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.body.totalCount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[totalCount]</local-name>
+            <parent-name>[getCtprvnRltmMesureDnsty.json]</parent-name>
+            <remote-alias>response.body.totalCount</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[Document Index (generated)]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Num Of Rows per body]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [문서 인덱스(생성됨)] : MAX([numOfRows]) }' />
+        <desc>
+          <formatted-text>
+            <run>세부 수준이 body인 계산된 측정값</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per getCtprvnRltmMesureDnsty.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([문서 인덱스(생성됨)])' />
+        <desc>
+          <formatted-text>
+            <run>세부 수준이 getCtprvnRltmMesureDnsty.json인 계산된 측정값</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' is-auto-gen-lod-field='true' name='[Number of Records per items]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ INCLUDE [문서 인덱스(생성됨)] : COUNTD([items 인덱스(생성됨)]) }' />
+        <desc>
+          <formatted-text>
+            <run>세부 수준이 items인 계산된 측정값</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Page No per body]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [문서 인덱스(생성됨)] : MAX([pageNo]) }' />
+        <desc>
+          <formatted-text>
+            <run>세부 수준이 body인 계산된 측정값</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Total Count per body]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [문서 인덱스(생성됨)] : MAX([totalCount]) }' />
+        <desc>
+          <formatted-text>
+            <run>세부 수준이 body인 계산된 측정값</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='getCtprvnRltmMesureDnsty.json' datatype='table' name='[__tableau_internal_object_id__].[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]' role='measure' type='quantitative' />
+      <column caption='Co Grade' datatype='string' name='[coGrade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.coGrade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Co Value' datatype='string' name='[coValue]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.coValue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Data Time' datatype='string' name='[dataTime]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.dataTime</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Items 인덱스(생성됨)' datatype='integer' hidden='true' name='[items 인덱스(생성됨)]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Khai Grade' datatype='string' name='[khaiGrade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.khaiGrade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Khai Value' datatype='string' name='[khaiValue]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.khaiValue</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[no2Grade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.no2Grade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[no2Value]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.no2Value</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Num Of Rows' datatype='real' name='[numOfRows]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>response.body.numOfRows</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[o3Grade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.o3Grade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[o3Value]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.o3Value</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Page No' datatype='real' name='[pageNo]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>response.body.pageNo</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[pm10Grade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.pm10Grade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[pm10Value]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.pm10Value</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[pm25Grade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.pm25Grade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[pm25Value]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.pm25Value</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Sido Name' datatype='string' name='[sidoName]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.sidoName</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[so2Grade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.so2Grade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' name='[so2Value]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.so2Value</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Station Name' datatype='string' name='[stationName]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+        <semantic-values semantic-role='[Geographical].[Latitude]'>
+          <semantic-value key='&quot;강서구&quot;' value='37.554596598339998' />
+          <semantic-value key='&quot;중구&quot;' value='37.582900000000002' />
+        </semantic-values>
+        <semantic-values semantic-role='[Geographical].[Longitude]'>
+          <semantic-value key='&quot;강서구&quot;' value='126.83722951068999' />
+          <semantic-value key='&quot;중구&quot;' value='126.99079999999999' />
+        </semantic-values>
+        <desc>
+          <formatted-text>
+            <run>response.body.items.Value.stationName</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total Count' datatype='real' name='[totalCount]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>response.body.totalCount</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[pm25Grade]' derivation='None' name='[none:pm25Grade:nk]' pivot='key' type='nominal' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Items' role='dimensions'>
+        <folder-item name='[coGrade]' type='field' />
+        <folder-item name='[coValue]' type='field' />
+        <folder-item name='[dataTime]' type='field' />
+        <folder-item name='[khaiGrade]' type='field' />
+        <folder-item name='[khaiValue]' type='field' />
+        <folder-item name='[no2Grade]' type='field' />
+        <folder-item name='[no2Value]' type='field' />
+        <folder-item name='[o3Grade]' type='field' />
+        <folder-item name='[o3Value]' type='field' />
+        <folder-item name='[pm10Grade]' type='field' />
+        <folder-item name='[pm10Value]' type='field' />
+        <folder-item name='[pm25Grade]' type='field' />
+        <folder-item name='[pm25Value]' type='field' />
+        <folder-item name='[sidoName]' type='field' />
+        <folder-item name='[so2Grade]' type='field' />
+        <folder-item name='[so2Value]' type='field' />
+        <folder-item name='[stationName]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='원본 측정값' role='measures'>
+        <folder-item name='[numOfRows]' type='field' />
+        <folder-item name='[pageNo]' type='field' />
+        <folder-item name='[totalCount]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Items'>
+          <folder-item name='[coGrade]' type='field' />
+          <folder-item name='[coValue]' type='field' />
+          <folder-item name='[dataTime]' type='field' />
+          <folder-item name='[khaiGrade]' type='field' />
+          <folder-item name='[khaiValue]' type='field' />
+          <folder-item name='[no2Grade]' type='field' />
+          <folder-item name='[no2Value]' type='field' />
+          <folder-item name='[o3Grade]' type='field' />
+          <folder-item name='[o3Value]' type='field' />
+          <folder-item name='[pm10Grade]' type='field' />
+          <folder-item name='[pm10Value]' type='field' />
+          <folder-item name='[pm25Grade]' type='field' />
+          <folder-item name='[pm25Value]' type='field' />
+          <folder-item name='[sidoName]' type='field' />
+          <folder-item name='[so2Grade]' type='field' />
+          <folder-item name='[so2Value]' type='field' />
+          <folder-item name='[stationName]' type='field' />
+        </folder>
+        <folder name='원본 측정값'>
+          <folder-item name='[numOfRows]' type='field' />
+          <folder-item name='[pageNo]' type='field' />
+          <folder-item name='[totalCount]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='C:/Users/ahyeon/Desktop/휴학/twbx/서울시 실시간 측정정보 조회.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/05/2022 01:10:51 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[coGrade]' value='[Extract].[response.body.items.Value.coGrade]' />
+            <map key='[coValue]' value='[Extract].[response.body.items.Value.coValue]' />
+            <map key='[dataTime]' value='[Extract].[response.body.items.Value.dataTime]' />
+            <map key='[khaiGrade]' value='[Extract].[response.body.items.Value.khaiGrade]' />
+            <map key='[khaiValue]' value='[Extract].[response.body.items.Value.khaiValue]' />
+            <map key='[no2Grade]' value='[Extract].[response.body.items.Value.no2Grade]' />
+            <map key='[no2Value]' value='[Extract].[response.body.items.Value.no2Value]' />
+            <map key='[numOfRows]' value='[Extract].[response.body.numOfRows]' />
+            <map key='[o3Grade]' value='[Extract].[response.body.items.Value.o3Grade]' />
+            <map key='[o3Value]' value='[Extract].[response.body.items.Value.o3Value]' />
+            <map key='[pageNo]' value='[Extract].[response.body.pageNo]' />
+            <map key='[pm10Grade]' value='[Extract].[response.body.items.Value.pm10Grade]' />
+            <map key='[pm10Value]' value='[Extract].[response.body.items.Value.pm10Value]' />
+            <map key='[pm25Grade]' value='[Extract].[response.body.items.Value.pm25Grade]' />
+            <map key='[pm25Value]' value='[Extract].[response.body.items.Value.pm25Value]' />
+            <map key='[sidoName]' value='[Extract].[response.body.items.Value.sidoName]' />
+            <map key='[so2Grade]' value='[Extract].[response.body.items.Value.so2Grade]' />
+            <map key='[so2Value]' value='[Extract].[response.body.items.Value.so2Value]' />
+            <map key='[stationName]' value='[Extract].[response.body.items.Value.stationName]' />
+            <map key='[totalCount]' value='[Extract].[response.body.totalCount]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='getCtprvnRltmMesureDnsty' increment-value='%null%' refresh-type='create' rows-inserted='40' timestamp-start='2022-01-05 13:10:50.464' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.coGrade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[coGrade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.coGrade</remote-alias>
+              <ordinal>0</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.coValue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[coValue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.coValue</remote-alias>
+              <ordinal>1</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.dataTime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dataTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.dataTime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.khaiGrade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[khaiGrade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.khaiGrade</remote-alias>
+              <ordinal>3</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.khaiValue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[khaiValue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.khaiValue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.no2Grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[no2Grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.no2Grade</remote-alias>
+              <ordinal>5</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.no2Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[no2Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.no2Value</remote-alias>
+              <ordinal>6</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.o3Grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[o3Grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.o3Grade</remote-alias>
+              <ordinal>7</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.o3Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[o3Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.o3Value</remote-alias>
+              <ordinal>8</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.pm10Grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pm10Grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.pm10Grade</remote-alias>
+              <ordinal>9</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.pm10Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pm10Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.pm10Value</remote-alias>
+              <ordinal>10</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.pm25Grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pm25Grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.pm25Grade</remote-alias>
+              <ordinal>11</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.pm25Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pm25Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.pm25Value</remote-alias>
+              <ordinal>12</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.sidoName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sidoName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.sidoName</remote-alias>
+              <ordinal>13</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.so2Grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[so2Grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.so2Grade</remote-alias>
+              <ordinal>14</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.so2Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[so2Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.so2Value</remote-alias>
+              <ordinal>15</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.items.Value.stationName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stationName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.items.Value.stationName</remote-alias>
+              <ordinal>16</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.numOfRows</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[numOfRows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.numOfRows</remote-alias>
+              <ordinal>17</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.pageNo</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pageNo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.pageNo</remote-alias>
+              <ordinal>18</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.body.totalCount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[totalCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.body.totalCount</remote-alias>
+              <ordinal>19</ordinal>
+              <family>getCtprvnRltmMesureDnsty.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:pm25Grade:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;2&quot;</bucket>
+            </map>
+            <map to='#da323f'>
+              <bucket>&quot;3&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='getCtprvnRltmMesureDnsty.json' id='getCtprvnRltmMesureDnsty.json_0C15654FFA8443A4AE2CECF6A75360D8'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.0a54jch1cmc8xp142vcag1fl0ozw' name='getCtprvnRltmMesureDnsty.json' table='[getCtprvnRltmMesureDnsty.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='서울특별시 구별 실시간 미세먼지 측정정보'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>서울특별시 구별 실시간 미세먼지 측정정보 (&lt;</run>
+            <run>[federated.1b3lg7z14hi84r13v5t4i108dt5w].[none:dataTime:nk]</run>
+            <run>&gt; 기준)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='getCtprvnRltmMesureDnsty' name='federated.1b3lg7z14hi84r13v5t4i108dt5w' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b3lg7z14hi84r13v5t4i108dt5w'>
+            <column caption='Data Time' datatype='string' name='[dataTime]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>response.body.items.Value.dataTime</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[dataTime]' derivation='None' name='[none:dataTime:nk]' pivot='key' type='nominal' />
+            <column-instance column='[pm25Grade]' derivation='None' name='[none:pm25Grade:nk]' pivot='key' type='nominal' />
+            <column-instance column='[pm25Value]' derivation='None' name='[none:pm25Value:nk]' pivot='key' type='nominal' />
+            <column-instance column='[stationName]' derivation='None' name='[none:stationName:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[pm25Grade]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>response.body.items.Value.pm25Grade</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='string' name='[pm25Value]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>response.body.items.Value.pm25Value</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Station Name' datatype='string' name='[stationName]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;강서구&quot;' value='37.554596598339998' />
+                <semantic-value key='&quot;중구&quot;' value='37.582900000000002' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;강서구&quot;' value='126.83722951068999' />
+                <semantic-value key='&quot;중구&quot;' value='126.99079999999999' />
+              </semantic-values>
+              <desc>
+                <formatted-text>
+                  <run>response.body.items.Value.stationName</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b3lg7z14hi84r13v5t4i108dt5w].[Longitude (generated)]' field-type='quantitative' max='14157976.050615145' min='14107714.617935652' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1b3lg7z14hi84r13v5t4i108dt5w].[Latitude (generated)]' field-type='quantitative' max='4537632.3324621031' min='4498236.7291975012' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b3lg7z14hi84r13v5t4i108dt5w].[none:pm25Grade:nk]' />
+              <size column='[federated.1b3lg7z14hi84r13v5t4i108dt5w].[none:pm25Value:nk]' />
+              <lod column='[federated.1b3lg7z14hi84r13v5t4i108dt5w].[none:dataTime:nk]' />
+              <text column='[federated.1b3lg7z14hi84r13v5t4i108dt5w].[none:stationName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.3314917087554932' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b3lg7z14hi84r13v5t4i108dt5w].[Latitude (generated)]</rows>
+        <cols>[federated.1b3lg7z14hi84r13v5t4i108dt5w].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D9B6B131-1926-4B24-BE44-6FDF840F0155}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='서울특별시 구별 실시간 미세먼지 측정정보 (2022-01-05 21:00 기준)'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='서울특별시 구별 실시간 미세먼지 측정정보' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='서울특별시 구별 실시간 미세먼지 측정정보' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4AFF452B-89D8-4E02-B5A5-655C92F316EC}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='서울특별시 구별 실시간 미세먼지 측정정보'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B8B6562C-9FBE-46F7-A8A0-F10D8136ABD2}' />
+    </window>
+    <window class='dashboard' name='서울특별시 구별 실시간 미세먼지 측정정보 (2022-01-05 21:00 기준)'>
+      <viewpoints>
+        <viewpoint name='서울특별시 구별 실시간 미세먼지 측정정보'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F3F004AD-8B2C-473C-9878-D54968E25BA9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='서울특별시 구별 실시간 미세먼지 측정정보' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
