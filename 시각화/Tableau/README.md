@@ -27,4 +27,21 @@
     </div>
     </details>
 
+    <details>
+    <summary>2022.01.06 : 태블로 기본 차트</summary>
+    <div markdown="1">
+    <b>실습 1)</b>    
+        <br>📚 사용 데이터 : 류현진 선수 MLB 2021시즌 데이터(twbx에서 제공 받음)
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/MLB2021/MLB2021#1">MLB 2021시즌 류현진 투구 분석</a>
+    
+    <b>실습 2)</b>
+        <br>📚 사용 데이터 : 손흥민 선수 득점 데이터(twbx에서 제공 받음)
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/_16414651937310/sheet5">손흥민 득점 분석</a>
+
+    <b>실습 3)</b>
+        <br>📚 사용 데이터 : 나이키 수익 데이터(twbx에서 제공 받음)
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/Nikesrevenuefrom2016to2020bychannel_16414666207310/Nikesrevenuefrom2016to2020bychannel">Nike's revenue from 2016 to 2020 by channel</a>
+    </div>
+    </details>
+
 ---
