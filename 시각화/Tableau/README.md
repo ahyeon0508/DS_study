@@ -44,4 +44,12 @@
     </div>
     </details>
 
+    <details>
+    <summary>2022.01.10 : 전 세계 코로나19 확진자 데이터 수집 및 대시보드 만들기</summary>
+    <div markdown="1">
+        📚 사용 데이터 : <a href="https://www.worldometers.info/coronavirus/#countries">COVID Live</a>
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/COVID-19CasesDashboard_16418102148100/1?publish=yes">COVID-19 Cases Dashboard</a>
+    </div>
+    </details>
+
 ---
