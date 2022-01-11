@@ -52,4 +52,12 @@
     </div>
     </details>
 
+    <details>
+    <summary>2022.01.11 : 2022년 캘린더 차트 만들기</summary>
+    <div markdown="1">
+        📚 사용 데이터 : 2022년 캘린더 데이터(twbx에서 제공 받음)
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/2022CALENDAR_16418765308700/2022CALENDAR?publish=yes">2022 CALENDAR</a>
+    </div>
+    </details>
+
 ---
