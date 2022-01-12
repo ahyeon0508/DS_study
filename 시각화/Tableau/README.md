@@ -60,4 +60,12 @@
     </div>
     </details>
 
+    <details>
+    <summary>2022.01.12 : 2022년 캘린더 차트 만들기</summary>
+    <div markdown="1">
+        📚 사용 데이터 : <a href="https://www.espn.com/">잉글리시 프리미어리그 순위 기록(2003~2021) 만들기</a>
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/EnglishPremierLeagueTableHistory_16419646044420/EnglishPremierLeagueTableHistory?publish=yes">English Premier League Table History</a>
+    </div>
+    </details>
+
 ---
