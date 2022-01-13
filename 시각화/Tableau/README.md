@@ -68,4 +68,12 @@
     </div>
     </details>
 
+    <details>
+    <summary>2022.01.13 : Rank by Category</summary>
+    <div markdown="1">
+        📚 사용 데이터 : ‘Sales Ranking Podium’ 대시보드 만들기(태블로 기본 데이터)
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/RankbyCategory_16420611096840/RankbyCategory_Board?publish=yes">Rank by Category</a>
+    </div>
+    </details>
+
 ---
