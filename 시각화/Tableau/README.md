@@ -76,4 +76,12 @@
     </div>
     </details>
 
+    <details>
+    <summary>2022.01.20 : Superstore 고객 정보</summary>
+    <div markdown="1">
+        📚 사용 데이터 : SUPERSTORE_2021_고객 생년월일(twbx에서 제공 받음)
+        <br>📊 대시보드 : <a href="https://public.tableau.com/app/profile/.85038091/viz/Superstore_16426589784360/Superstore?publish=yes">Superstore 고객 정보</a>
+    </div>
+    </details>
+
 ---
